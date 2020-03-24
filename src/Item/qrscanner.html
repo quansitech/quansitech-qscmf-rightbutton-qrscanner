@@ -1,0 +1,14 @@
+<div id="div_{$gid}" style="display:none"></div>
+<notdefined name="qrscanner">
+    <script src="__PUBLIC__/qrscanner/qrscanner-bundle.js"></script>
+    <define name="qrscanner" value="1" />
+</notdefined>
+<script>
+
+    window.addEventListener('load', function(){
+        var qrscanner_{$gid} = new window.Qrscanner('div_{$gid}', {:json_encode($option)});
+        $('#{$gid}').click(function(){
+            qrscanner_{$gid}.show();
+        })
+    })
+</script>
