@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Modal, Button } from 'antd';
 import  { QrcodeScanner, Util } from "@quansitech/react-qrscanner";
+import "./index.css";
 
 class Qrscanner extends React.Component {
 
